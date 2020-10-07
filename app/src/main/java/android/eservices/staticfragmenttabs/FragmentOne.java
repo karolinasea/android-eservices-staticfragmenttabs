@@ -17,16 +17,23 @@ public class FragmentOne extends Fragment {
         //TODO
     }
 
+    /*public static ExampleFragment newInstance(String text, int number) {
+        ExampleFragment fragment = new ExampleFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_TEXT, text);
+        args.putInt(ARG_NUMBER, number);
+        fragment.setArguments(args);
+        return fragment;
+    }*/
+
     public static FragmentOne newInstance() {
-        //TODO
-        return null;
+        FragmentOne fragment = new FragmentOne();
+        return fragment;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        //TODO
-        return null;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return (ViewGroup) inflater.inflate(R.layout.fragment_one, container, false);
     }
 
     @Override
